@@ -1,0 +1,37 @@
+.notepad {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #000000; 
+  border-radius: 10px;
+  width: 400px;
+  padding: 10px 15px 40px 15px;
+}
+
+.sheet__holes {
+  display: flex; 
+  gap: 25px;
+}
+
+.hole {
+  border: 1px solid #000000; 
+  border-radius: 100%; 
+  height: 20px;
+  width: 20px;
+}
+
+.sheet__lines {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  gap: 10px
+}
+
+.line p {
+  font-size: 25px;
+  font-family: "Dancing Script", cursive;
+}
+
+.line hr {
+  margin: 0;
+}
