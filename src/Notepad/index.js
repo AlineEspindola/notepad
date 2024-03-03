@@ -1,7 +1,14 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 import './Notepad.css';
 
 function Notepad() {
+
+  const [tasks, setTasks] = useState([
+    'Dar uma estrela ao repositório',
+    'Seguir Aline',
+    'Dar beijo no Thiago'
+  ])
+
   return (
     <div className='notepad'> 
       <div className='notepad__sheet'>
@@ -17,20 +24,19 @@ function Notepad() {
           <div className='hole'></div>
         </div>
         <div className='sheet__lines'>
-          <div className='line'>
+          {tasks.map(task => (
+            <div className='line'>
             <div className='line__text'>
               <input type="checkbox"></input>
-              <p>Dar uma estrela no repositório</p>
+              <p key={task}>{task}</p>
             </div>
             <hr></hr>
           </div>
-          <div className='line'>
-            <div className='line__text'>
-              <input type="checkbox"></input>
-              <p>Seguir Aline Espindola</p>
-            </div>
-            <hr></hr>
-          </div>
+          ))}
+        </div>
+        <div className='sheet__send'>
+          <FontAwesomeIcon icon="fa-solid fa-pen" />
+          <input></input>
         </div>
       </div>
     </div>
