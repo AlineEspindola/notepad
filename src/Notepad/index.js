@@ -18,23 +18,17 @@ function Notepad() {
         </div>
         <div className='sheet__lines'>
           <div className='line'>
-            <p>Vou criar um programa</p>
+            <div className='line__text'>
+              <input type="checkbox"></input>
+              <p>Dar uma estrela no repositório</p>
+            </div>
             <hr></hr>
           </div>
           <div className='line'>
-            <p>Tomar café</p>
-            <hr></hr>
-          </div>
-          <div className='line'>
-            <p>Beber café</p>
-            <hr></hr>
-          </div>
-          <div className='line'>
-            <p>Não sei o que fazer</p>
-            <hr></hr>
-          </div>
-          <div className='line'>
-            <p>Tomar café</p>
+            <div className='line__text'>
+              <input type="checkbox"></input>
+              <p>Seguir Aline Espindola</p>
+            </div>
             <hr></hr>
           </div>
         </div>
