@@ -54,7 +54,7 @@ function Notepad() {
         <div className='sheet__send'>
           <div className='send__input'>
             <i className="fa-solid fa-pen"></i>
-            <input type="text" value={input} placeholder="Escreva uma anotação..." maxLength={36} onChange={e => setInput(e.target.value)}></input>
+            <input type="text" value={input} placeholder="Escreva uma anotação..." maxLength={24} onChange={e => setInput(e.target.value)}></input>
           </div>
           <div className='send__button'>
             <button className='fa-solid fa-arrow-up' onClick={taskAdd}></button>
