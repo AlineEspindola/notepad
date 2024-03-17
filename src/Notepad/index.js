@@ -11,7 +11,7 @@ function Notepad() {
   const [taskIdCounter, setTaskIdCounter] = useState(2); //Começa com 2 pois já possui uma tarefa
 
   const taskAdd = useCallback(() => {
-    if(input) {
+    if(input.trim()) {
        const newTask = { id: taskIdCounter, text: input}
        setTasks([...tasks, newTask]);
        setInput(''); // Reseta o input
