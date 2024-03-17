@@ -97,3 +97,26 @@
   cursor: pointer;
   font-size: 17px;
 }
+
+@media screen and (max-width: 460px) {
+  .notepad {
+    width: 250px;
+  }
+
+  .sheet__holes {
+    gap: 14px;
+  }
+
+  .hole {
+    height: 15px;
+    width: 15px;
+  }
+
+  .line__text {
+    gap: 2px;
+  }
+
+  .line p {
+    font-size: 18px;
+  }
+}
